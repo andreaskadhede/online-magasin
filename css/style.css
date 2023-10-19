@@ -286,12 +286,89 @@ body {
     font-size: 20px;
   }
 
+  .tekst-forside {
+    margin: 8px 0;
+  }
+
   /* styling af billede i artikel */
   .seneste-img {
     width: 45%;
     float: right;
     right: 15%;
     position: relative;
+  }
+
+  @media (max-width: 1510px) {
+    .seneste-tekst {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    #h2-forside {
+      font-size: 30px;
+    }
+
+    .seneste-tekst ul {
+      font-size: 16px;
+    }
+  
+    .seneste-tekst a{
+      font-size: 18px;
+    }
+
+    .forsidep {
+      font-size: 18px;
+    }
+  
+  }
+
+
+  @media (max-width: 1340px) {
+    .seneste-tekst {
+      margin: 10px 0;
+      font-size: 14px;
+      left: 100px;
+      width: 700px;
+    }
+
+    .seneste-img {
+      width: 500px;
+      right: 100px;
+    }
+
+    #h2-forside {
+      font-size: 25px;
+    }
+
+    .seneste-tekst ul {
+      font-size: 12px;
+    }
+  
+    /* styling af link i tekst i artikel */
+    .seneste-tekst a{
+      font-size: 14px;
+    }
+
+    .forsidep {
+      font-size: 18px;
+    }
+  
+  }
+
+  @media (max-width: 1200px) {
+    #seneste {
+      justify-content: center;
+    }
+
+    .seneste-tekst {
+      margin: 10px 2%;
+      width: 80%;
+    }
+
+    .seneste-img {
+      width: 75%;
+      margin: 0 5%;
+    }
   }
 
   /* styling af 3 billeder i bunden på forsiden med tekst */
