@@ -1,0 +1,26 @@
+# humanstxt.org
+
+# TEAM
+
+*Andrea Skadhede
+
+---
+
+# THANKS
+
+(This is the place where you put sources of things)
+(Locations where you got icons, etc.)
+ * Font Awesome - https://fontawesome.com
+ * Googel Fonts - https://fonts.google.com
+
+---
+
+# TECHNOLOGY
+
+## Software
+
+* Visual Studio Code
+
+## Hosting
+
+* Simply.com - https://www.simply.com/dk/

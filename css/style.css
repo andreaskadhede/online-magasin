@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* styling af body */
+body {
+    font-family: 'Saira Condensed', 'Saira', 'Rokkitt', Verdana, sans-serif;
+    font-weight: 400;
+    background-color: #ededed;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** NAVBAR **************************************************************/
+/*************************************************************************************************************************************/
+
+/* styling af navbar */
+  nav {
+      background-color: #c2d4c9;
+      height: 89.5px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      display: block;
+      z-index: 2;
+  }
+
+  /* Styling af logo */
+  #verden_rundt {
+    height: 120px;
+    margin-top: -13px;
+    padding: 5px 0 5px 100px;
+  }
+
+  nav .ul {
+      float: right;
+      margin-right: 75px;
+      margin-top: 27px;
+  }
+
+  /* Styling af link i nav'en */
+  nav div a {
+      color: white;
+      font-size: 22px;
+      float: left;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  /* Styling af dropdown link i nav'en */
+  nav div div {
+    color: white;
+    font-size: 19px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+  /* styling af label checkbtn class */
+  .checkbtn {
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    line-height: 86.5px;
+    font-size: 30px;
+    display: none;
+  }
+    
+  /* styling af input tag  */
+  #check {
+    display: none;
+  }
+    
+  /* styling af dropdown menu */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* styling af dropdown button */
+  .dropdown .dropbtn {
+    font-size: 22px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  /* Tilføj farve på bagrunden af navbar links ved hover */
+  nav div a:hover, .dropdown:hover .dropbtn {
+    background-color: #4d6f59;
+    transition: 0.5s;
+  }
+
+  /* Styling af dropdown indhold (skjult ved standard) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9fbfa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links i dropdown menu */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Tilføj farve på bagrunden af dropdown links ved hover */
+  .dropdown-content a:hover {
+    background-color: #e6eee9;
+    transition: 0.5s;
+  }
+
+  /* Vis dropdown menu ved hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* break-point 920px max for navbar*/
+  @media (max-width: 965px) {
+    .checkbtn {
+      display: block;
+    }
+
+    nav .ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      left: 100%;
+      background: #c2d4c9;
+      top: 86.5px;
+      text-align: center;
+      margin: auto;
+      transition: all 1.5s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav div .dropdown {
+      background-color: #c2d4c9;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      justify-content: center;
+      width: 150px;
+    }
+
+    #check:checked ~ .ul {
+      left: 0;
+    }
+  }
+
+/* styling navbar slut */
+
+
+/*************************************************************************************************************************************/
+/************************************************************** FORSIDE **************************************************************/
+/*************************************************************************************************************************************/
+
+
+/* styling af main start*/
+  /* styling af forside */
+
+    /* styling af første billede */
+    .intro-billede {
+      height: auto;
+      width: 100%;
+      opacity: 0.75;
+    }
+  
+    .intro {
+      position: relative;
+      z-index: 0;
+      margin-bottom: 25px;
+    }
+
+  /* styling af logo på forside */  
+  #h1-forside {
+    font-size: 80px;
+    display: block;
+    position: relative;
+    margin: 20px 0 5px;
+  }
+
+  .h1 {
+    height: 40%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 25%;
+    left: 35%;
+
+  }
+
+    /* styling af knapper med lande */
+    .lande {
+      margin: 0 20px;
+      padding: 0;
+      list-style: none;
+      font-size: 18px;
+      justify-content: center;
+      display: flex;
+    }
+  
+    .lande li {
+      padding: 25px 10px;
+    }
+  
+    .lande li a {
+      color: inherit;
+      text-decoration: none;
+      border: #81a3b6 solid 2px;
+      border-radius: 1px;
+      background-color: #b3c8d3;
+      width: 11vw;
+      display: inline-block;
+      text-align: center;
+    }
+  
+    .lande li a:hover {
+      background-color: #81a3b6;
+      border: #617a88 solid 2px;
+    }
+  
+    @media (max-width: 830px) {
+      .lande {
+        font-size: 12px;
+      }
+    }
+
+  /* styling af h2 på forside */
+  #h2-forside {
+    font-size: 35px;
+  }
+
+  /* styling af article #seneste */
+  #seneste {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 75px;
+  }
+
+  /* styling af tekst i artikel */
+  .seneste-tekst {
+    float: left;
+    left: 15%;
+    width: 35%;
+    height: 35%;
+    padding: 0 10px 2px;
+    position: relative;
+    z-index: 1;
+    margin: 5% 0;
+    background-color: #f9fbfa;
+    font-size: 20px;
+  }
+
+  /* styling af liste i artikel */
+  .seneste-tekst ul {
+    list-style: disc;
+    font-size: 18px;
+    padding: 5px 10px;
+    list-style-position: inside;
+  }
+
+  /* styling af link i tekst i artikel */
+  .seneste-tekst a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+  }
+
+  /* styling af billede i artikel */
+  .seneste-img {
+    width: 45%;
+    float: right;
+    right: 15%;
+    position: relative;
+  }
+
+  /* styling af 3 billeder i bunden på forsiden med tekst */
+  .galleri {
+    margin: 20px 40px 50px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  /* styling af div .container */
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0 3%;
+  }
+
+  /* styling af billeder */
+  picture .img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* tilføjelse af overlay tekst (skjult ved standard) */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #669477;
+  }
+
+  /* overlay tekst kommer frem ved hover */
+  .container:hover .overlay {
+    opacity: .85;
+  }
+
+  /* styling af tekst i overlay */
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /* styling af billeder i bunden på forsiden med tekst slut */
+/* styling af forside slut */
+
+
+/*************************************************************************************************************************************/
+/************************************************************ UNDERSIDER *************************************************************/
+/*************************************************************************************************************************************/
+
+  /* styling af undersider */
+  /* styling h1 på underisder */
+  h1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  /* styling af artikeldele på undersider */
+  .underside {
+    margin: 30px 22% 50px;
+    display: block;
+  }
+
+  /* styling af h2 */
+  h2 {
+
+    font-size: 45px;
+  }
+
+  /* styling af h2 på skjulte perler siden, grundet lille overskrift med land */
+  .speciel-h2 {
+    font-size: 45px;
+    margin-bottom: -25px;
+  }
+
+  /* styling af h3 */
+  h3 {
+    font-size: 23px;
+    margin: 0 0 -20px 0;
+  }
+
+  /* styling af indledning */
+  .indledning {
+    margin: 20px 30% 0;
+    font-style: italic;
+  }
+
+  /* styling af afslutning */
+  .afslutning {
+    margin: 80px 30% 50px;
+    font-style: italic;
+  }
+
+  /* styling af p på undersider */
+  p {
+    font-size: 20px;
+    padding: 0 0 3px 0;
+  }
+
+  /* styling af ul i artiklerne */
+  .forslag li {
+    font-size: 18px;
+    line-height: 25px;
+    list-style: disc;
+    padding: 5px 0px;
+    margin-left: 25px;
+    width: 60%;
+  }
+
+  .forslag1 li {
+    margin-left: 37%;
+    width: auto;
+  }
+
+  /* styling af billeder på højre side */
+
+  .img1 {
+    margin: 0 0 0 10px;
+    width: 34%;
+    float: right;
+  }
+
+  /* styling af billeder på højre side */
+  .img2 {
+    margin: 0 10px 0 0;
+    width: 34%;
+    float: left;
+  }
+
+  .img3 {
+    border: solid #c2d4c9 5px;
+  }
+
+    /* styling af error siden start */
+    .ups {
+      text-align: center;
+      line-height: 35px;
+    }
+
+    .ups a {
+      color: inherit;
+      text-decoration: none;
+      display: inline;
+    }
+
+    .ups a:hover {
+      background-color: #c2d4c9;
+    }
+
+    .ups div {
+      position: relative;
+      bottom: 0;
+      height: 35vh;
+      display: block;
+    }
+    /* styling af error siden slut */
+  /* styling af underside slut */
+/* styling af main slut*/
+
+
+/*************************************************************************************************************************************/
+/*************************************************************** FOOTER **************************************************************/
+/*************************************************************************************************************************************/
+
+
+/* styling footer start */
+.footer {
+    padding: 30px;
+    background-color: #c2d4c9;
+    width: 100%;
+    bottom: 0;
+}
+
+/* styling af symboler i footer */
+.footer, .social {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #669477;
+}
+
+/* styling af links i footer */
+.footer .social a {
+    font-size: 28px;
+    color: inherit;
+    border: 1px solid #669477;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+/* styling af symboler ved hover */
+.footer .social a:hover {
+    opacity: 0.9;
+    color: #4d6f59;
+}
+
+/* styling af ul */
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* styling af menu */
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/* styling af menu links */
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* styling af menu links ved hover */
+.footer ul li a:hover {
+    opacity: 1;
+    color: #4d6f59;
+}
+
+/* styling af copyright */
+.footer, .copyright {
+    margin-top:  7px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #85a992;
+}
+/* styling footer slut */
